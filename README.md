@@ -5,8 +5,9 @@ A responsive, modern portfolio website built to showcase my skills in Python Dev
 ## 🚀 Live Demo
 [VIEW LIVE PORTFOLIO HERE]## 🚀 Live Demo
 [VIEW LIVE PORTFOLIO HERE]## 🚀 Live Demo
+## 🔗 Live Portfolio
+[Visit My Portfolio](https://rsalikhan42-dot.github.io/RashidPortfolio/)
 
-[VIEW LIVE PORTFOLIO HERE](https://rsalikhan42-dot.github.io/RASHIDPORTFOLIO/)
 ## 🛠️ Tech Stack Used
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Styling/Layout:** Custom CSS, Flexbox, CSS Grid
