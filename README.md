@@ -1,33 +1,34 @@
 # 🌟 RASHID ALI KHAN - PERSONAL PORTFOLIO
 
-A responsive, modern portfolio website built to showcase my skills in Python Development, AI/ML learning, and technical documentation.
+A responsive, modern portfolio website built to showcase my skills in Python development, AI/ML learning, and bilingual technical documentation (Urdu & English).
 
 ## 🚀 Live Demo
-[VIEW LIVE PORTFOLIO HERE]## 🚀 Live Demo
-[VIEW LIVE PORTFOLIO HERE]## 🚀 Live Demo
-## 🔗 Live Portfolio## 🔗 Live Portfolio
-[Visit My Portfolio](https://rsalikhan42-dot.github.io/RashidPortfolio/)
+[🔗 View Live Portfolio](https://rsalikhan42-dot.github.io/RashidPortfolio/)
 
+## 🛠️ Technologies Used
+This portfolio was built using modern web technologies and lightweight libraries:
 
-## 🛠️ Tech Stack Used
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Styling/Layout:** Custom CSS, Flexbox, CSS Grid
-* **Icons:** Boxicons
-* **Libraries:** ScrollReveal JS, Typed JS
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Styling/Layout:** Custom CSS, Flexbox, CSS Grid
+- **Icons:** Boxicons
+- **Libraries:** ScrollReveal JS, Typed JS
 
 ## ✨ Features
-* **Professional Design:** Clean, dark theme with a vibrant accent color.
-* **Responsive Layout:** Fully functional on Desktop, Tablet, and Mobile screens.
-* **Dynamic Content:** Typed JS (Typewriter effect) on the Home section.
-* **Projects:** Highlights key projects like the Milk Shop Bill Generator, Scientific Calculator, and the Tajweed App.
+- **Professional Design:** Clean dark theme with vibrant accent colors
+- **Responsive Layout:** Optimized for Desktop, Tablet, and Mobile
+- **Dynamic Content:** Typewriter effect using Typed JS
+- **Projects Showcase:** Includes:
+  - Milk Shop Bill Generator
+  - Scientific Calculator
+  - Quran Tajweed App
 
 ## 🔗 Connect with Me
-* **LinkedIn:** [Rashid Ali Khan on LinkedIn](https://www.linkedin.com/in/rashid-ali-khan-27644b390)
-* **GitHub:** [rsalikhan42-dot](https://github.com/rsalikhan42-dot)
+- **LinkedIn:** [Rashid Ali Khan](https://www.linkedin.com/in/rashid-ali-khan-27644b390)
+- **GitHub:** [rsalikhan42-dot](https://github.com/rsalikhan42-dot)
 
 ## 📝 How to Run Locally
-1. Clone the repository: `git clone https://github.com/rsalikhan42-dot/RASHIDPORTFOLIO.git`
-2. Open `index.html` in your browser.
+To view the portfolio on your local machine:
 
----
-*Created with dedication by Rashid Ali Khan.*
+```bash
+git clone https://github.com/rsalikhan42-dot/RashidPortfolio.git
+
