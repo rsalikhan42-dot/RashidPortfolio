@@ -9,7 +9,7 @@
 📄 ### 🔗 Live Portfolio
 🎯 [Visit My Portfolio Website](https://rsalikhan42-dot.github.io/RashidPortfolio/)
 
-📄 [Download My CV (PDF)](files/RASHID_KHAN_CV.pdf)
+📄📄 [Download My CV (PDF)](files/Rashid-CV.pdf)
 
 ---
 
