@@ -3,8 +3,8 @@
 A responsive, modern portfolio website built to showcase my skills in Python Development, AI/ML learning, and technical documentation.
 
 ## 🚀 Live Demo
-[VIEW LIVE PORTFOLIO HERE](APNA_DEPLOYMENT_URL_PASTE_KAREIN_STEP_3_KE_BAAD)
-
+[VIEW LIVE PORTFOLIO HERE]## 🚀 Live Demo
+[VIEW LIVE PORTFOLIO HERE](https://rsalikhan42-dot.github.io/RASHIDPORTFOLIO/)
 ## 🛠️ Tech Stack Used
 * **Frontend:** HTML5, CSS3, JavaScript
 * **Styling/Layout:** Custom CSS, Flexbox, CSS Grid
