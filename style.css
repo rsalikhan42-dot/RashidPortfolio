@@ -1,0 +1,571 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #0D192B;
+  --main-color: #00FF7F;
+  --second-bg-color: #1A2D40;
+  --text-color: #E0E6F0;
+  --btn-gradient: linear-gradient(90deg, #00FF7F, #00C880);
+  --glow-shadow: 0 0 25px var(--main-color);
+}
+
+/* --- Body --- */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* --- Header --- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav li a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: var(--main-color);
+}
+
+.right-header .btn {
+  padding: 0.8rem 1.6rem;
+}
+
+/* --- Button --- */
+/* style.css mein yeh block replace karein (around line 70) */
+.right-header .btn {
+display: inline-flex; /* Ensure it's treated as a single block */
+justify-content: center; /* Text ko center mein rakhe */
+align-items: center; /* Text ko vertically center mein rakhe */
+width: 12rem; /* FIXED WIDTH: Text ko ek line mein rakhne ke liye */
+padding: 0.5rem 1rem; /* Padding thodi aur kam ki */
+background: var(--btn-gradient);
+border: 2px solid var(--main-color);
+border-radius: 0.8rem;
+font-size: 1.4rem; /* FONT SIZE REDUCED: Text ko chota kiya */
+font-weight: 600;
+color: var(--bg-color);
+cursor: pointer;
+transition: 0.5s;
+margin-left: 2rem; /* Margin thoda adjust kiya */
+white-space: nowrap; /* ADDED: Ensure text doesn't wrap to next line */
+}
+
+/* Header mein .nav li a aur button ke beech thodi space */
+.nav {
+    display: flex;
+    gap: 2rem; /* Adjusted gap between nav links */
+    align-items: center; /* Vertically align nav links */
+}
+
+.nav li a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: 0.3s;
+    /* margin-right: 0.5rem; */ /* Agar Let's Chat zyada kareeb lage to uncomment karein */
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+  box-shadow: var(--glow-shadow);
+}
+
+/* --- Home Section --- */
+.home {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 12rem 9% 2rem; /* TOP PADDING INCREASED from 10rem */
+min-height: 100vh;
+}
+.hero {
+  max-width: 60rem;
+}
+
+.hero h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.text-animate h3 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.hero p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.home-sci {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  transition: 0.5s;
+}
+
+.home-sci a:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: var(--glow-shadow);
+}
+
+.home-img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--main-color);
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* --- About Section --- */
+.about {
+  padding: 8rem 9%;
+  background: var(--second-bg-color);
+}
+
+.about .heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* style.css: .about-img block (REPLACE THIS ENTIRE BLOCK) */
+.about-img {
+flex: 1 1 35rem;
+max-width: 40rem; 
+border-radius: 1rem;
+overflow: hidden;
+box-shadow: var(--glow-shadow); /* Green Glow */
+width: 35rem; /* NEW: Container ki width set ki */
+height: 35rem; /* NEW: Container ki height set ki */
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+/* style.css: .about-img img block (REPLACE THIS ENTIRE BLOCK) */
+.about-img img {
+ width: 100%;
+ height: 100%; /* NEW: Height ko 100% kiya taake container fit ho */
+object-fit: cover;
+border-radius: 1rem; 
+display: block; /* ADDED: Yeh zaroori hai taake image poori height le */
+}
+.about-content {
+  flex: 1 1 45rem;
+}
+
+.about-content h3 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 2.4rem;
+}
+
+.urdu-text {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 1.8rem;
+  text-align: right;
+  color: var(--text-color);
+}
+
+/* ==================================== */
+/* --- Services Section CSS (REPLACE) --- */
+/* ==================================== */
+
+.services {
+    padding: 8rem 9%;
+    background: var(--second-bg-color); /* Background color set kiya */
+}
+
+.services .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* 1. Services Container (Grid Layout) */
+.services-container {
+    display: grid;
+    /* 30rem se chote size par bhi side-by-side fit honge */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Service Box Styling aur Hover Effect */
+.service-box {
+    background: var(--bg-color); /* Box background dark */
+    padding: 3rem 2.5rem 4rem; /* Padding barhaya */
+    border-radius: 1rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color); /* Initial border */
+    transition: 0.5s ease;
+    cursor: default;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2); 
+}
+
+/* Hover Effect: Box zoom hoga aur glow border milega */
+.service-box:hover {
+    border-color: var(--main-color); /* Green border on hover */
+    transform: scale(1.03); /* Thoda sa zoom effect */
+    box-shadow: var(--glow-shadow); /* Glow effect on hover */
+}
+
+/* 3. Icon, Heading, aur Paragraph Styling */
+.service-box i {
+    font-size: 5rem; /* Icon size barhaya */
+    color: var(--main-color); /* Green icon color */
+    margin-bottom: 1.5rem;
+}
+
+.service-box h3 {
+    font-size: 2.4rem; /* Heading size barhaya */
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+.service-box p {
+    font-size: 1.6rem; /* Paragraph font size barhaya */
+    line-height: 1.6;
+}
+/* --- Portfolio Section --- */
+.portfolio {
+  padding: 8rem 9%;
+  background: var(--second-bg-color);
+}
+
+.portfolio .heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+/* style.css mein .portfolio .heading ke baad yeh block ADD ya REPLACE karein */
+.portfolio-container {
+    display: grid;
+    /* Yeh line 3 columns banane ya 35rem wide items banane ke liye zaroori hai */
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); 
+    gap: 2.5rem;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+/* style.css: .portfolio-box block ko REPLACE karein */
+.portfolio-box {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* margin hata diya */
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--glow-shadow); 
+}
+/* style.css: .portfolio-box img block ko REPLACE karein */
+.portfolio-box img {
+    width: 100%;
+    height: 100%; /* Zaroori: Height ko 100% set kiya */
+    object-fit: cover;
+    transition: 0.5s ease;
+    display: block; /* Yeh bhi zaroori hai */
+}
+
+/* style.css: .portfolio-layer a block ko REPLACE karein */
+.portfolio-layer a {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 5.5rem; /* Thoda sa size barhaya (5.5rem) */
+    height: 5.5rem;
+    background: var(--bg-color); 
+    border-radius: 50%;
+    /* Z-index ko 10 rakhein taake click ho sake */
+    z-index: 10; 
+    cursor: pointer;
+}
+/* style.css: .portfolio-layer a i block ko REPLACE karein */
+.portfolio-layer a i {
+    font-size: 2.8rem; /* Icon ka size mazeed barhaya (2.8rem) */
+    color: var(--main-color); /* Icon ko Green color diya */
+}
+
+/* ===================================== */
+/* --- Contact Section CSS (REPLACE) --- */
+/* ===================================== */
+
+.contact {
+    /* Background color set kiya */
+    background: var(--second-bg-color); 
+    padding: 8rem 9%;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.contact form {
+    max-width: 70rem; /* Form ki zyada se zyada width */
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* 1. Input Fields Container (Two Columns) */
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 2. Individual Input Fields aur Textarea */
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%; /* Default 100% width */
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    border: none;
+    outline: none;
+    resize: none; /* Textarea ko resize hone se roka */
+}
+
+/* Input Box ke andar har input field ko 49% width di (for two columns) */
+.contact form .input-box input {
+    width: 49%; /* Har field 49% width lega (thodi gap ke liye) */
+}
+
+/* 3. Textarea */
+.contact form textarea {
+    margin-bottom: 2rem;
+}
+
+/* 4. Submit Button Styling */
+.contact form .btn {
+    margin-top: 2rem;
+    /* Button ki styling Home Section se aayegi (.btn class) */
+}
+/* ================================== */
+/* --- Footer Section CSS (ADD/REPLACE) --- */
+/* ================================== */
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Items ko corners par rakhta hai */
+    align-items: center;
+    flex-wrap: wrap; /* Mobile par wrap karne ke liye */
+    padding: 2rem 9%;
+    background: var(--bg-color); /* Darkest background color */
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+    color: var(--white-color); /* Text white */
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--main-color); /* Green background */
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+}
+
+/* Hover effect for the Scroll-to-Top icon */
+.footer-iconTop a:hover {
+    box-shadow: var(--glow-shadow); /* Green glow on hover */
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color); /* Icon ka color dark blue */
+}
+
+/* ==================================== */
+/* --- MEDIA QUERIES (RESPONSIVE CSS) --- */
+/* ==================================== */
+
+/* 1. Large Screens (1200px - Thode chhote laptop) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%; /* Base font size thoda kam kiya */
+    }
+}
+
+/* 2. Tablet (991px) - General Adjustments */
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%; /* Header padding kam kiya */
+    }
+    section {
+        padding: 10rem 3% 2rem; /* Section padding kam kiya */
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+/* 3. Mobile (768px) - Layout aur Hamburger Menu Fix */
+@media (max-width: 768px) {
+    /* --- Hamburger Menu Icon Control --- */
+    #menu-icon {
+        display: block; /* Hamburger icon ko dikhaya */
+    }
+
+    /* Navbar ko screen se chupa diya */
+    .navbar {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none; /* By default chupa rahega */
+    }
+
+    /* JavaScript ke zariye jab active class lagegi to navbar dikhega */
+    .navbar.active {
+        display: block; 
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--white-color); /* Link color set kiya */
+    }
+
+    /* --- Sections Layout Fix --- */
+    .home {
+        flex-direction: column; /* Home ko column mein kiya */
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 70vw; /* Home image ka size kam kiya */
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse; /* About image neeche, text upar */
+    }
+    
+    .about-content {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .about-img img {
+        width: 70vw; /* About image ka size kam kiya */
+    }
+    
+    /* Input Boxes ko column mein kiya */
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    /* Har input field ko poori width di */
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    /* Services aur Portfolio items mobile par full width lein */
+    .services-container,
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+}
+
+/* 4. Smallest Phones (450px) */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    /* Baqi chizon ke liye 768px ka code hi kafi hai */
+}
