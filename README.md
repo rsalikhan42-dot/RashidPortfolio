@@ -44,7 +44,7 @@ I create tools that are **bilingual, ethical, and culturally inclusive** — so 
 ### 📫 Connect With Me
 - 💼 [LinkedIn](https://www.linkedin.com/in/rsalikhan42)  
 - 🧑‍💻 [GitHub](https://github.com/rsalikhan42)  
-  - 📧 [Email Me Directly](mailto:rsalikhan42@gmail.com) *(replace with actual)*
+  - 📧 [Email Me Directly](mailto:rsalikhan42@gmail.com) 
 
 ---
 
