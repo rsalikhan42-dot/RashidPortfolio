@@ -49,7 +49,8 @@ I create tools that are **bilingual, ethical, and culturally inclusive** — so 
 ---
 
 ### 📊 GitHub Stats (Optional)
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rsalikhan42&show_icons=true&theme=radical)
+### 📊 GitHub Stats (Optional)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=rsalikhan42-dot&show_icons=true&theme=radical)
 
 ---
 
